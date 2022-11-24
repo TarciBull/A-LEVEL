@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu ul{visibility: hidden;}
+        .menu:hover{visibility: hidden;}
+        .menu:hover ul{visibility: visible;}
+        ul{background-color: gray;
+            position: absolute;
+        transform: rotate(-90deg) translate(0,-180px);
+        height: 100px;
+        width:150px;
+        color: white;}
+        .menu{width: 50px;
+        height: 300px;
+         position: relative;
+         left: 0;
+        background-color: gray;
+        color: white;
+        display: inline-block;
+        transform: rotate(90deg);}
+    </style>
+</head>
+<body>
+  <div class="menu">MENU HERE
+    <ul>
+        <li>HOME</li>
+        <li>CONTACTS</li>
+        <li>FAQ</li>
+        <li>ABOUT</li>
+        <li>NEWS</li>
+    </ul>
+  </div>
+</body>
+</html>

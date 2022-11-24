@@ -1,0 +1,5 @@
+blockquote{color:green;}
+#greycol{color: gray;}
+.yellow{color: yellow;}
+div+h3+p{color: green;}
+.text-box div>p{color: red;}

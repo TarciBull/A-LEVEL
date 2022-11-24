@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{width: 300px;}
+        label[for='name'] {padding-right: 40px}
+        label[for='email'] {padding-right: 37px}
+        label[for='number'] {padding-right: 23px}
+        label[for='staites'] {padding-right: 34px}
+        textarea{resize: none;
+        height: 150px;
+        width: inherit;}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox:checked+label::before {
+  border-color: green;
+  background-color: green;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+    </style>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Контактна інформація</legend>
+        <p><label for="name">Ім’я <em>*</em></label><input type="text" id="name"></p>
+        <p><label for="email">E-mail</label><input type="email" id="email"></p>
+        <p><label for="number">Телефон</label><input type="number" id="number"></p>
+        <p><label for="staites">Країни</label><select>
+            <option>Україна</option>
+            <option>США</option>
+            <option>Німеччина</option>
+            <option>Італія</option>
+            <option>Іспанія</option>
+            <option>Франція</option>
+            <option>Грузія</option>
+            <option>Туреччина</option>
+            <option>Фінляндія</option>
+            <option>Японія</option>
+            <option>Південна-Корея</option>
+            <option>Нідерланди</option>
+          </select>
+          </p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <input type="checkbox" style="visibility: hidden;" class="custom-checkbox" id="happy" name="happy" value="yes">
+            <label for="happy"></label>
+    </fieldset>
+    <p><input type="submit" value="Відправити"></p>
+</form>
+
+</body>
+</html>
